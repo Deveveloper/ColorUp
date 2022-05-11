@@ -165,13 +165,13 @@ function scene:create( event )
 
     -- Leaderboards
 
-    --local lblLeaderboards = display.newText("Лидеры", _CX, _H - 40, "assets/fonts/Galada.ttf", 26)
-    --lblLeaderboards.fill = { 1, 1, 1 }
-    --_grpContent:insert(lblLeaderboards)
+    local lblLeaderboards = display.newText("Лидеры", _CX, _H - 40, "assets/fonts/Galada.ttf", 26)
+    lblLeaderboards.fill = { 1, 1, 1 }
+    _grpContent:insert(lblLeaderboards)
 
-    --lblLeaderboards:addEventListener("tap", function()
-        --gc:openLeaderboard()
-    --end)
+    lblLeaderboards:addEventListener("tap", function()
+        gc:openLeaderboard()
+    end)
 
     -- Show ads
     if utilities:canShowAd() == true then

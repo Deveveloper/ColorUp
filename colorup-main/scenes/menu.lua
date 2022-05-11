@@ -72,19 +72,19 @@ function scene:create( event )
 
     btnPlay:addEventListener("tap", gotoGame)
 
-    --local lblSettings = display.newText("Настройки", _CX, _H - 40, "assets/fonts/Galada.ttf", 26)
-    --lblSettings.fill = { 1, 1, 1 }
-    --_grpMain:insert(lblSettings)
+    local lblSettings = display.newText("Настройки", _CX, _H - 40, "assets/fonts/Galada.ttf", 26)
+    lblSettings.fill = { 1, 1, 1 }
+    _grpMain:insert(lblSettings)
 
-    --lblSettings:addEventListener("tap", gotoSettings)
+    lblSettings:addEventListener("tap", gotoSettings)
 
-    --local lblLeaderboards = display.newText("Лидеры", _CX, _H - 100, "assets/fonts/Galada.ttf", 26)
-    --lblLeaderboards.fill = { 1, 1, 1 }
-    --_grpMain:insert(lblLeaderboards)
+    local lblLeaderboards = display.newText("Лидеры", _CX, _H - 100, "assets/fonts/Galada.ttf", 26)
+    lblLeaderboards.fill = { 1, 1, 1 }
+    _grpMain:insert(lblLeaderboards)
 
-    --lblLeaderboards:addEventListener("tap", function()
-        --gc:openLeaderboard()
-    --end)
+    lblLeaderboards:addEventListener("tap", function()
+        gc:openLeaderboard()
+    end)
 end
 
 function scene:show( event )

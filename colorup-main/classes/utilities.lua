@@ -79,7 +79,7 @@ end
 
 function utilities:playMusic(music)
 
-    if db.music == "Off" then
+    if db.music == "On" then
         audio.play(music, { loops=-1, channel=1})
         audio.setVolume(0.6, {channel=1})
     end
