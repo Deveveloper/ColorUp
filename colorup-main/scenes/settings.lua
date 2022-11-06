@@ -77,7 +77,7 @@ function scene:create( event )
     background.y = _CY
 
     -- Title
-    local title = display.newText("Настройки", _CX, 100, "assets/fonts/Galada.ttf", 80)
+    local title = display.newText("Настройки", _CX, 100, "assets/fonts/Galada.ttf", 40)
     title.fill = { 1, 1, 1 }
     _grpMain:insert(title)
 
@@ -109,7 +109,7 @@ function scene:create( event )
     _grpMain:insert(lblCreatedby)
 
     lblCreatedby:addEventListener("tap", function()
-        system.openURL( "https://www.youtube.com/channel/UCfVoYvY8BfTDeF63JQmQJvg" )
+        system.openURL( "https://vk.com" )
     end)
 
     -- Credits
